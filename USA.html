@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Aljazera English News</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="jumbotron" style="color:black">
+
+    <h1 style="color:black">
+
+        Assessment for Productbox
+
+    </h1>
+
+</div>
+
+
+<div class="container">
+
+    {% for headline, link, i in context %}
+
+    <h2 style="color:black;font-size:20px;">Headline: </h2 style="color:black;font-size:16px;"> {{headline}}
+    <h2 style="color:black;font-size:20px;">Link: </h2 style="color:black;font-size:16px;"> {{link}}
+    <h2 style="color:black;font-size:20px;">Source: </h2 style="color:black;font-size:16px;"> {{'NEWS_API'}}
+
+    {% endfor %}
+
+
+</div>
+
+
+</body>
+</html>
