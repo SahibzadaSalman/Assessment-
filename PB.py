@@ -48,7 +48,7 @@ def Index():
 @app.route('/bbc')          ##Getting top headlines from BBC News
 def bbc():
     newsapi1 = NewsApiClient(api_key="a3374fd7f3e94155b0123501f2717351")   ##   Same api key from the NewsApi
-    topheadlines1 = newsapi1.get_top_headlines(sources="bbc-news", q = 'news')  ##getting top headlines from BBC news
+    topheadlines1 = newsapi1.get_top_headlines(sources="bbc-news")  ##getting top headlines from BBC news
 
     articles1 = topheadlines1['articles']       ## Extracting the articles from the top headlines
 
